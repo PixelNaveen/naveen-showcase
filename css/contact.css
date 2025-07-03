@@ -1,0 +1,49 @@
+.contact-section {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contact-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.contact-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-text {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.contact-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}

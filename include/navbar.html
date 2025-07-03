@@ -1,0 +1,40 @@
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar px-4 py-2">
+  <!-- remove fixed-top -->
+
+  <a class="navbar-brand fw-bold fs-4" href="index.html">Naveen</a>
+  
+  <!-- Hide toggler on all screens -->
+  <button
+    class="navbar-toggler d-none"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Show navbar items only on large screens -->
+  <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+    <ul class="navbar-nav align-items-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-glow ms-lg-3" href="docs/resume.pdf" target="_blank">Resume</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Show Resume button only on tablet/mobile -->
+  <a class="btn btn-glow d-lg-none ms-auto" href="docs/resume.pdf" target="_blank">Resume</a>
+</nav>

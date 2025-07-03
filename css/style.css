@@ -1,0 +1,33 @@
+.entire-body {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.about-hr {
+  border: 0;
+  height: 3px;
+  background: #ffffff;
+  margin: 20px 
+}
+
+.skills-hr {
+  border: 0;
+  height: 3px;
+  background: #ffffff;
+  margin: 20px;
+}
+
+.projects-hr {
+  border: 0;
+  height: 3px;
+  background: #ffffff;
+  margin: 20px;
+}
+
+.contact-hr {
+  border: 0;
+  height: 3px;
+  background: #ffffff;
+  margin: 20px;
+}
+
