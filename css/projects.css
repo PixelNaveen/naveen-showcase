@@ -1,19 +1,18 @@
-/* Basic Reset */
 .card-section {
-    padding: 20px;
-    background-color: black;
+  padding: 32px 0;
+  background-color: #f7f9fa;
 }
 
 .custom-card {
-  background: gray;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(60, 72, 88, 0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .custom-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-7px);
+  box-shadow: 0 12px 28px rgba(60, 72, 88, 0.13);
 }
 
 .custom-card .card-img {
@@ -23,23 +22,23 @@
 }
 
 .custom-card .card-title {
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
+  font-weight: 700;
+  color: #203a43;
+  margin-bottom: 0.7rem;
 }
 
 .custom-card .card-text {
-  font-size: 15px;
-  color: #555;
+  font-size: 1rem;
+  color: #495057;
 }
 
 .custom-card .card-link {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   font-weight: 600;
   color: #007bff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.2s;
 }
 
 .custom-card .card-link:hover {
@@ -47,4 +46,19 @@
   text-decoration: underline;
 }
 
+/* Modal & Carousel */
+.modal-content {
+  background: #fff;
+  color: #222;
+  padding: 24px;
+  border-radius: 18px;
+}
 
+.carousel-inner img {
+  object-fit: cover;
+  height: 400px;
+}
+
+.modal-header .btn-close {
+  background-color: #e2e6ea;
+}
