@@ -8,7 +8,6 @@ Welcome to the Naveen Showcase repository! This is a modern, responsive, and fea
 
 The project is organized for scalability and clarity, with dedicated folders for styles, scripts, content, images, and documentation.
 
-![Project Structure Screenshot](image1)
 
 **Folder Overview:**
 
@@ -151,7 +150,7 @@ All contributions, feedback, and suggestions are welcome!
 
 **Naveen**
 - GitHub: [@PixelNaveen](https://github.com/PixelNaveen)
-- Email: your.email@example.com
+- Email: naveen.thedev@gmail.com
 - [Portfolio Live Link](#) <!-- Add your deployed portfolio link here -->
 
 For questions, suggestions, or collaboration, please use the contact form on the site or reach out directly!
