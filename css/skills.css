@@ -1,0 +1,154 @@
+/* Skills Section Container */
+.skills-section {
+  padding: 60px;
+  background: #f7fbff;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  opacity: 0;  /* Start hidden */
+  transform: translateY(60px); /* Start off-screen from the bottom */
+  transition: opacity 1.6s cubic-bezier(.4,2,.6,1), transform 1.6s cubic-bezier(.4,2,.6,1); /* Smooth transition */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/* When the section is in the viewport, make it visible and move it to its original position */
+.skills-section.visible {
+  opacity: 1;  /* Fade in */
+  transform: translateY(0);  /* Move to original position */
+}
+
+/* Logo Grid */
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateX(-40px);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: opacity 0.8s, transform 0.8s;
+}
+.logo-box img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 2px;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
+  transition: transform 0.3s;
+}
+.logo-box span {
+  font-weight: 600;
+  color: #222;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+.logo-box:hover img {
+  transform: scale(1.12) rotate(-6deg);
+}
+
+/* Staggered animation for logos */
+.skills-section.visible .logo-box {
+  animation: logoFadeIn 0.8s forwards;
+}
+.skills-section.visible .logo-box:nth-child(1) { animation-delay: 0.1s; }
+.skills-section.visible .logo-box:nth-child(2) { animation-delay: 0.2s; }
+.skills-section.visible .logo-box:nth-child(3) { animation-delay: 0.3s; }
+.skills-section.visible .logo-box:nth-child(4) { animation-delay: 0.4s; }
+.skills-section.visible .logo-box:nth-child(5) { animation-delay: 0.5s; }
+.skills-section.visible .logo-box:nth-child(6) { animation-delay: 0.6s; }
+.skills-section.visible .logo-box:nth-child(7) { animation-delay: 0.7s; }
+.skills-section.visible .logo-box:nth-child(8) { animation-delay: 0.8s; }
+.skills-section.visible .logo-box:nth-child(9) { animation-delay: 0.9s; }
+.skills-section.visible .logo-box:nth-child(10) { animation-delay: 1s; }
+.skills-section.visible .logo-box:nth-child(11) { animation-delay: 1.1s; }
+
+@keyframes logoFadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Progress Bars */
+.progress-box {
+  margin-bottom: 22px;
+  opacity: 0;
+  transform: translateX(40px);
+  animation: barFadeIn 0.8s forwards;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.progress-box label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+.progress {
+  background: #e9ecef;
+  border-radius: 20px;
+  height: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4f8cff 0%, #38e6c5 100%);
+  border-radius: 20px;
+  width: 0;
+  transition: width 1.2s cubic-bezier(.4,2,.6,1) 0.2s;
+}
+
+/* Staggered animation for bars */
+.progress-box:nth-child(1) { animation-delay: 0.2s; }
+.progress-box:nth-child(2) { animation-delay: 0.4s; }
+.progress-box:nth-child(3) { animation-delay: 0.6s; }
+.progress-box:nth-child(4) { animation-delay: 0.8s; }
+.progress-box:nth-child(5) { animation-delay: 1s; }
+.progress-box:nth-child(6) { animation-delay: 1.2s; }
+
+@keyframes barFadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animate progress bar fill on load */
+.skills-section .progress-bar {
+  animation: barFill 1.2s cubic-bezier(.4,2,.6,1) forwards;
+  animation-delay: 1s;
+}
+@keyframes barFill {
+  from { width: 0; }
+  to { width: var(--progress); }
+}
+
+/* Reduce gap between logos */
+.skills-section .row.g-3 {
+  column-gap: 0px;   /* Minimum horizontal gap */
+  row-gap: 10px;     /* Keep a small vertical gap */
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .skills-section .col-lg-6 {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 576px) {
+  .skills-section {
+    padding: 20px 0;
+  }
+  .logo-box img {
+    width: 44px;
+    height: 44px;
+  }
+  .progress {
+    height: 12px;
+  }
+}

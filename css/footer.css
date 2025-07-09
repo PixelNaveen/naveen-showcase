@@ -1,0 +1,27 @@
+.main-footer {
+  background-color: #f7f9fa;
+  color: #495057;
+  padding: 24px 0 14px 0;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  border-top: 2px solid #e2e6ea;
+}
+
+.footer-text {
+  color: #495057;
+}
+
+.footer-icon-link {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.footer-icon-link:hover {
+  transform: scale(1.08);
+}
+
+.footer-icon {
+  width: 28px;
+  height: 28px;
+  filter: none;
+}
