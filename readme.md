@@ -27,7 +27,7 @@ The project is organized for scalability and clarity, with dedicated folders for
 - **Component-Based Structure:** HTML partials for easy maintenance and DRY code.
 - **Dynamic Includes:** JavaScript-powered HTML includes for navbar, footer, and main sections.
 - **Project Cards:** Clean, modular design for showcasing projects.
-- **Downloadable Resume:** PDF download in `/docs/resume.pdf`.
+- **Downloadable Resume:** PDF download in `/docs/My_Resume.pdf`.
 - **Contact Form:** Static or extendable for backend integration.
 - **SEO Optimized:** Semantic HTML and proper metadata.
 
