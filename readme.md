@@ -127,11 +127,7 @@ The `include.js` script automatically replaces this with the content of `navbar.
 - **Accessibility:** Semantic markup and alt text for images
 - **Performance:** Minimal JS, optimized images, fast loads
 
----
 
-## 📝 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
